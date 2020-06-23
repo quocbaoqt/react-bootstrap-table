@@ -2,54 +2,70 @@
   margin: 5px 10px;
 }
 
-.tr-string-example, .th-string-example{
-    font-style: oblique;
-    color: red;
-    background-color: aquamarine;
+.tr-string-example,
+.th-string-example {
+  font-style: oblique;
+  color: red;
+  background-color: aquamarine;
 }
 
-.tr-function-example{
-    font-weight: bold;
-    background-color: aquamarine;
+.tr-function-example {
+  font-weight: bold;
+  background-color: aquamarine;
 }
 
-.td-header-string-example{
-    font-style: oblique;
-    color: red;
-    background-color: aquamarine;
+.td-header-string-example {
+  font-style: oblique;
+  color: red;
+  background-color: aquamarine;
 }
 
-.td-column-string-example{
-    color: blue;
-    background-color: antiquewhite;
+.td-column-string-example {
+  color: blue;
+  background-color: antiquewhite;
 }
 
-.td-column-function-odd-example{
-    color: blue;
-    background-color: antiquewhite;
+.td-column-function-odd-example {
+  color: blue;
+  background-color: antiquewhite;
 }
 
-.td-column-function-even-example{
-    color: red;
-    background-color: yellowgreen;
+.td-column-function-even-example {
+  color: red;
+  background-color: yellowgreen;
 }
 
 .my-header-class {
-  background-color: #0066FF;
+  background-color: #0066ff;
 }
 
 .my-body-class {
-  background-color: #CC00FF;
+  background-color: #cc00ff;
 }
 
 .my-container-class {
-  border: #0000FF 2.5px solid;
+  border: #0000ff 2.5px solid;
 }
 
 .my-table-container-class {
-  border: #FFBB73 5px solid;
+  border: #ffbb73 5px solid;
 }
 
 .class-for-editing-cell {
-    background-color: #FFBB73;
+  background-color: #ffbb73;
+}
+
+/* Custom  */
+.table-header-wrapper table > thead > tr > th {
+  font-size: 23px;
+  border-bottom: 0;
+}
+
+.react-bs-container-body {
+  font-size: 19px;
+}
+
+.id-cell{
+  width: 110px;
+  text-align: center !important;
 }

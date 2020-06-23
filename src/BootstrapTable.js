@@ -490,7 +490,8 @@ class BootstrapTable extends Component {
             noAnyExpand={ this.state.expanding.length === 0 }
             expandAll={ this.props.options.expandAll }
             toggleExpandAllChilds={ this.toggleExpandAllChilds }
-            expandColumnBeforeSelectColumn={ expandColumnOptions.expandColumnBeforeSelectColumn }>
+            expandColumnBeforeSelectColumn={ expandColumnOptions.expandColumnBeforeSelectColumn }
+            showId={ this.props.showId }>
             { this.props.children }
           </TableHeader>
           <TableBody

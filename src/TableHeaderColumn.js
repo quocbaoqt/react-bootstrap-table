@@ -135,6 +135,7 @@ class TableHeaderColumn extends Component {
       caretRender,
       className,
       isOnlyHead,
+      showId,
       version,
       sortHeaderColumnClassName: customSortClass,
       thStyle: style
@@ -162,7 +163,9 @@ class TableHeaderColumn extends Component {
     const classes = classSet(
       Util.isFunction(className) ? className() : className,
       !isOnlyHead && dataSort ? 'sort-column' : '',
-      sortClass);
+      sortClass,
+      showId ? 'id-cell' : ''
+      );
 
     const attr = {};
     if (headerTitle) {

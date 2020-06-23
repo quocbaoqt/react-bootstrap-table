@@ -127,12 +127,14 @@ class TableBody extends Component {
             if (formattedValue) columnTitle = formattedValue.toString();
             else if (fieldValue) columnTitle = fieldValue.toString();
           }
+          console.log(Object.keys(data)[i] === 'id' ? 'id-cell' : '');
+
           return (
             <TableColumn key={ i }
               cIndex={ i }
               rIndex={ r }
               dataAlign={ column.align }
-              className={ tdClassName }
+              className={ tdClassName + ( Object.keys(data)[i] === 'id' ? 'id-cell' : '' ) }
               columnTitle={ columnTitle }
               cellEdit={ cellEdit }
               hidden={ column.hidden }

@@ -87,7 +87,7 @@ export default {
     let expandRowHeader = null;
     const isBootstrap4 = this.isBootstrap4(version);
     const isSelectRowDefined = this.isSelectRowDefined(selectRow.mode);
-    const columnWidth = isBootstrap4 ? '38px' : '30px';
+    const columnWidth = isBootstrap4 ? '38px' : '50px';
     if (isSelectRowDefined) {
       const style = {
         width: selectRow.columnWidth || columnWidth,
