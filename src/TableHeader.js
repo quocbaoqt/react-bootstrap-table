@@ -39,7 +39,7 @@ class TableHeader extends Component {
 
   render() {
     const { sortIndicator, sortList, onSort, reset, version, condensed, bordered,
-      expandedColumnHeaderComponent, noAnyExpand, toggleExpandAllChilds, expandAll
+      expandedColumnHeaderComponent, noAnyExpand, toggleExpandAllChilds, expandAll, showId
     } = this.props;
     const containerClasses = classSet(
       'react-bs-container-header',
